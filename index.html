@@ -1,0 +1,63 @@
+
+body {
+    font-family: Arial;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: navy;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.banner {
+    background: lightblue;
+    padding: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    background: lightgray;
+    padding: 20px;
+}
+
+.card:hover {
+    background: orange;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background: navy;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
